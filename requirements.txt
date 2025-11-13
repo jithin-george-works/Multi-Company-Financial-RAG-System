@@ -10,3 +10,4 @@ unstructured[local-inference]==0.7.26
 lxml==4.9.3
 python-dotenv==1.0.0
 tqdm==4.66.1
+mkdocs==1.6.1
