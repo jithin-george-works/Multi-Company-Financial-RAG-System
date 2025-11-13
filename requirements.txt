@@ -1,0 +1,12 @@
+streamlit==1.30.0
+langchain==0.2.34
+langchain-community==0.3.14
+langchain-ollama==0.0.7
+langgraph==0.7.7
+sentence-transformers==2.2.2
+faiss-cpu==1.7.4
+beautifulsoup4==4.12.2
+unstructured[local-inference]==0.7.26
+lxml==4.9.3
+python-dotenv==1.0.0
+tqdm==4.66.1

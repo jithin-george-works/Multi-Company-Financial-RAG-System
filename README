@@ -1,0 +1,22 @@
+# Multi-Company Financial RAG (PoC)
+
+## Summary
+This repository demonstrates a local multi-company Retrieval-Augmented-Generation (RAG) system that:
+- parses 2 company HTML files,
+- chunks them with Unstructured,
+- builds FAISS indices (separate per company),
+- uses a local LLM (Ollama / llama3:latest) to decide which company to query (LLM-based routing),
+- retrieves relevant contexts and generates answers,
+- provides a small Streamlit UI with streaming output when available.
+
+## Setup
+
+1. Install Ollama locally and pull the model:
+   - Install Ollama: https://ollama.ai/download
+   - Pull model: `ollama pull llama3:latest`
+
+2. Create a virtual environment and install Python dependencies:
+```bash
+python -m venv .venv
+source .venv/bin/activate          # or .venv\Scripts\activate on Windows
+pip install -r requirements.txt
